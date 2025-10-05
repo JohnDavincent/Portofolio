@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import "tailwindcss";
+
+@layer utilities {
+  .hover\:text-stroke-white:hover {
+    -webkit-text-stroke: 0.5px yellow;
+    text-stroke: 0.5px yellow;
+  }
+  .nav-bg-color {
+    background-color: #1c1c1c;
+  }
+  .nav-font {
+    font-family: "JetBrains Mono", monospace;
+    color: lightslategray;
+    @apply text-xl
+  }
+  .introduct {
+    color: #00c896;
+  }
+
+  .name {
+    color: #00c853;
+  }
+  
+  .card-background {
+    background-color:#E0E0E0;
+  }
+  
+}
+
+@theme {
+  --bg-color: #121212; /* light*/
+  --text-color: #e0e0e0; /* hitam/gelap */
+  --accent-color: #e7d393; /* highlight */
+  --font-sans: "Mona Sans", sans-serif;
+  --font-modern-negra: "Modern Negra", sans-serif;
+  --font-serif: "DM Serif Text", serif;
+}
