@@ -1,72 +1,71 @@
 import React from "react";
 import Portocard from "./components/card";
 import Navbar from "./components/Navbar";
-import karyawarna from "./assets/picture/karyawarna.png"
-import pintarsaham from "./assets/picture/pintarsaham.png"
-import hbit from "./assets/picture/hbit.png"
-import rm from "./assets/picture/rm.png"
+import karyawarna from "./assets/picture/karyawarna.png";
+import pintarsaham from "./assets/picture/pintarsaham.png";
+import hbit from "./assets/picture/hbit.png";
+import rm from "./assets/picture/rm.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ExperienceCarousel from "./components/experience";
 
 function App() {
   const projectCard = [
     {
-      image : pintarsaham,
-      types : ['react','bootstrap','LSTM model','SQLlite'],
-      title_picture : "tampilan dari pintarsaham",
-      title : "PintarSaham",
-      description : `PintarSaham merupakan aplikasi web yang bertujuan untuk membantu orang mengerti tentang saham
+      image: pintarsaham,
+      types: ["react", "bootstrap", "LSTM model", "SQLlite"],
+      title_picture: "tampilan dari pintarsaham",
+      title: "PintarSaham",
+      description: `PintarSaham merupakan aplikasi web yang bertujuan untuk membantu orang mengerti tentang saham
                     Pada web ini ada beberapa fitur unggulan, yaitu : course tentang dasar saham, Chart saham, forum diskusi, fitur prediksi harga saham dengan AI serta game simulasi`,
-      link : "https://incredible-beijinho-043b7d.netlify.app/"         
-
+      link: "https://incredible-beijinho-043b7d.netlify.app/",
     },
     {
-      image : karyawarna,
-      types : ['react','bootstrap'],
-      title : "Karya Warna Websites",
-      title_picture : "tampilan dari karyawarna",
-      description : `Website ini merupakan web yang bertujuan untuk memberikan informasi mengenai toko karya warna
+      image: karyawarna,
+      types: ["react", "bootstrap"],
+      title: "Karya Warna Websites",
+      title_picture: "tampilan dari karyawarna",
+      description: `Website ini merupakan web yang bertujuan untuk memberikan informasi mengenai toko karya warna
                     informasi tersebut adalah pengenalan toko, lokasi toko, barang yang tersedia, review dari pelanggan, dan nomor toko`,
-      link : "https://karyawarna.netlify.app/"
-      
+      link: "https://karyawarna.netlify.app/",
     },
     {
-      image : rm,
-      types : ["AI model: Bert","ICCSCI","NER"],
-      title : "Publish Paper",
-      title_picture : "tampilan dari paper",
-      description : `Paper ini berjudul : 'Fine-Tuning and Bayesian HyperparameterOptimization of DistilBERTfor Named Entity Recognition'
-                    Paper ini saya kerjakan berdua dengan rekan saya, kalvin. Meskipun paper kami tidak di accept, tetapi saya mempelajari suatu hal tentang model bert dalam NER`
-      
+      image: rm,
+      types: ["AI model: Bert", "ICCSCI", "NER"],
+      title: "Publish Paper",
+      title_picture: "tampilan dari paper",
+      description: `Paper ini berjudul : 'Fine-Tuning and Bayesian HyperparameterOptimization of DistilBERTfor Named Entity Recognition'
+                    Paper ini saya kerjakan berdua dengan rekan saya, kalvin. Meskipun paper kami tidak di accept, tetapi saya mempelajari suatu hal tentang model bert dalam NER`,
     },
     {
-      image : hbit,
-      types : ["figma","html","css","javascript"],
-      title : "Hbit Tracker (Gemastik) ",
-      title_picture : "logo",
-      description : `Hbit tracker adalah suatu aplikasi yang dapat mentracking habit dari user dengan tema permainan 8 bit`
-      
+      image: hbit,
+      types: ["figma", "html", "css", "javascript"],
+      title: "Hbit Tracker (Gemastik) ",
+      title_picture: "logo",
+      description: `Hbit tracker adalah suatu aplikasi yang dapat mentracking habit dari user dengan tema permainan 8 bit`,
     },
     {
-      image : hbit,
-      types : ["figma","html","css","javascript"],
-      title : "DiamondCut Motor",
-      title_picture : "logo",
-      description : `DiamondCut motor adalah website yang bertujuan untuk menjual supercar dan sebagai showroom dari berbagai merek supercar`
+      image: hbit,
+      types: ["figma", "html", "css", "javascript"],
+      title: "DiamondCut Motor",
+      title_picture: "logo",
+      description: `DiamondCut motor adalah website yang bertujuan untuk menjual supercar dan sebagai showroom dari berbagai merek supercar`,
     },
     {
-      image : hbit,
-      types : ["figma"],
-      title : "Hbit Tracker (Gemastik) ",
-      title_picture : "logo",
-      description : ``
-    }
-  ]
+      image: hbit,
+      types: ["figma"],
+      title: "Hbit Tracker (Gemastik) ",
+      title_picture: "logo",
+      description: ``,
+    },
+  ];
   return (
     <>
       <div
-        className="w-full min-h-screen"
+        className="w-full min-h-screen flex flex-col"
         style={{ backgroundColor: "var(--bg-color)" }}
       >
         <Navbar />
@@ -146,56 +145,57 @@ function App() {
               </a>
             </div>
           </div>
-          <div className = "flex flex-col max-w h-200 mt-35 ml-20">
-            <div className = "w-120 h-120 rounded-full bg-white flex justify-center items-center shadow-lg ml-10">
+          <div className="flex flex-col max-w h-200 mt-35 ml-20">
+            <div className="w-120 h-120 rounded-full bg-white flex justify-center items-center shadow-lg ml-10">
               <div className="rounded-full overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="src\assets\picture\portoJohn-removebg-preview.png"
-              ></img>
+                <img
+                  className="w-full h-full object-cover"
+                  src="src\assets\picture\portoJohn-removebg-preview.png"
+                ></img>
               </div>
             </div>
-              
+
             <div>
-              <h1 className="underline italic text-xl align-baseline mt-25"
+              <h1
+                className="underline italic text-xl align-baseline mt-25"
                 style={{
                   fontFamily: "var(--font-sans)",
                   color: "var(--text-color)",
                 }}
-                >"AI is the future. Those who fail to understand it will be left behind"
-                </h1>
+              >
+                "AI is the future. Those who fail to understand it will be left
+                behind"
+              </h1>
             </div>
           </div>
         </section>
 
-        <div className = "flex items-center flex-col justify-center mt-40 w-full">
-          <div className = "flex-wrap items-center 200h mb-10">
-            <h1 className="text-6xl mb-4 introduct font-bold"
-                style={{ fontFamily: "JetBrains Mono" }}
-                >My Project
+        <div className="flex items-center flex-col justify-center mt-40 w-full">
+          <div className="flex-wrap items-center 200h mb-10">
+            <h1
+              className="text-6xl mb-4 introduct font-bold"
+              style={{ fontFamily: "JetBrains Mono" }}
+            >
+              My Project
             </h1>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {projectCard.map((p,index) =>(
-              <Portocard 
-                key = {index}
-                image = {p.image}
+            {projectCard.map((p, index) => (
+              <Portocard
+                key={index}
+                image={p.image}
                 title_picture={p.title_picture}
-                title = {p.title}
-                types = {p.types}
-                description = {p.description}
+                title={p.title}
+                types={p.types}
+                description={p.description}
                 link={p.link}
-                />
+              />
             ))}
           </div>
         </div>
-
-        <div className = "full-w flex justify-center items-center mt-30">
-          <h1 className="text-6xl mb-4 introduct font-bold"
-                style={{ fontFamily: "JetBrains Mono" }}
-                >Experience
-            </h1>
+        <div className="min-h-screen text-white">
+          <ExperienceCarousel />
         </div>
       </div>
     </>
