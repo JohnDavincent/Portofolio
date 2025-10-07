@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import mentor from "../assets/picture/mentoring.jpg";
+import ureeka from "../assets/picture/ureeka.png";
+import himti from "../assets/picture/HIMTI.jpg";
 
 const ExperienceCarousel = () => {
   const experiences = [
@@ -10,14 +12,14 @@ const ExperienceCarousel = () => {
       time: "February 2025 - June 2025",
     },
     {
-      image: mentor,
-      title: "Mentor Peer to peer Binus",
-      time: "February 2025 - June 2025",
+      image: ureeka,
+      title: "Committee Member of Ureeka",
+      time: "Juli 2024 - Present",
     },
     {
-      image: mentor,
-      title: "Mentor Peer to peer Binus",
-      time: "February 2025 - June 2025",
+      image: himti,
+      title: "Commitee member of TECHFEST 2025",
+      time: "September 2024 - Juli 2025"
     },
   ];
 
@@ -47,7 +49,7 @@ const ExperienceCarousel = () => {
             <img
               src={exp.image}
               alt={exp.title}
-              className="rounded-2xl w-full h-[400px] object-cover shadow-lg"
+              className="rounded-2xl w-full h-[600px] object-cover shadow-lg"
             />
             <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white py-4 rounded-b-2xl">
               <h2 className="text-2xl font-semibold">{exp.title}</h2>

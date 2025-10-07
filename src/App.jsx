@@ -3,6 +3,7 @@ import Portocard from "./components/card";
 import Navbar from "./components/Navbar";
 import karyawarna from "./assets/picture/karyawarna.png";
 import pintarsaham from "./assets/picture/pintarsaham.png";
+import portojohn from "./assets/picture/portoJohn-removebg-preview.png"
 import hbit from "./assets/picture/hbit.png";
 import rm from "./assets/picture/rm.png";
 import { FaLinkedin } from "react-icons/fa";
@@ -150,7 +151,7 @@ function App() {
               <div className="rounded-full overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
-                  src="src\assets\picture\portoJohn-removebg-preview.png"
+                  src={portojohn} alt = "John Davincent"
                 ></img>
               </div>
             </div>
