@@ -7,7 +7,7 @@ import portojohn from "./assets/picture/portoJohn-removebg-preview.png"
 import diamondcut from "./assets/picture/diamondcut.png"
 import hbit from "./assets/picture/hbit.png";
 import rm from "./assets/picture/rm.png";
-import aisaham from "./assets/picture/aisaham.png"
+import aisaham from "./assets/picture/aiSaham.png"
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
