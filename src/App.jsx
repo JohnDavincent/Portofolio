@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar";
 import karyawarna from "./assets/picture/karyawarna.png";
 import pintarsaham from "./assets/picture/pintarsaham.png";
 import portojohn from "./assets/picture/portoJohn-removebg-preview.png"
+import diamondcut from "./assets/picture/diamondcut.png"
 import hbit from "./assets/picture/hbit.png";
 import rm from "./assets/picture/rm.png";
+import aisaham from "./assets/picture/aisaham.png"
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -17,7 +19,7 @@ function App() {
   const projectCard = [
     {
       image: pintarsaham,
-      types: ["react", "bootstrap", "LSTM model", "SQLlite"],
+      types: ["React", "BootStrap", "SQLlite"],
       title_picture: "tampilan dari pintarsaham",
       title: "PintarSaham",
       description: `PintarSaham merupakan aplikasi web yang bertujuan untuk membantu orang mengerti tentang saham
@@ -26,7 +28,7 @@ function App() {
     },
     {
       image: karyawarna,
-      types: ["react", "bootstrap"],
+      types: ["React", "BootStrap"],
       title: "Karya Warna Websites",
       title_picture: "tampilan dari karyawarna",
       description: `Website ini merupakan web yang bertujuan untuk memberikan informasi mengenai toko karya warna
@@ -43,24 +45,24 @@ function App() {
     },
     {
       image: hbit,
-      types: ["figma", "html", "css", "javascript"],
+      types: ["Figma"],
       title: "Hbit Tracker (Gemastik) ",
       title_picture: "logo",
       description: `Hbit tracker adalah suatu aplikasi yang dapat mentracking habit dari user dengan tema permainan 8 bit`,
     },
     {
-      image: hbit,
-      types: ["figma", "html", "css", "javascript"],
+      image: diamondcut,
+      types: ["Figma", "HTML", "CSS", "JavaScript"],
       title: "DiamondCut Motor",
       title_picture: "logo",
       description: `DiamondCut motor adalah website yang bertujuan untuk menjual supercar dan sebagai showroom dari berbagai merek supercar`,
     },
     {
-      image: hbit,
-      types: ["figma"],
-      title: "Hbit Tracker (Gemastik) ",
+      image: aisaham,
+      types: ["Streamlit","AI model : LSTM"],
+      title: "AI prediksi Saham",
       title_picture: "logo",
-      description: ``,
+      description: `AI yang mampu memprediksi harga saham dalam jangka waktu yang ditentukan dan juga dapat memberikan rekomendasi beli atau jual dengan disclamer yang ketat`,
     },
   ];
   return (
