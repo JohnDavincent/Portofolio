@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import mentor from "../assets/picture/mentoring.jpg";
-import ureeka from "../assets/picture/ureeka.png";
+import ureeka from "../assets/picture/Ureeka.png";
 import himti from "../assets/picture/HIMTI.jpg";
 
 const ExperienceCarousel = () => {
@@ -91,3 +91,4 @@ const ExperienceCarousel = () => {
 };
 
 export default ExperienceCarousel;
+
