@@ -72,106 +72,151 @@ function App() {
         style={{ backgroundColor: "var(--bg-color)" }}
       >
         <Navbar />
-        <section id="home" className="w-full h-200 flex  justify-center ">
-          <div className="flex-wrap">
-            <div className="mt-35 ml-10 max-w-5xl h-110 text-wrap">
-              <h1
-                className="text-3xl mb-3 ml-1"
-                style={{ fontFamily: "var(--font-sans)", color: "white" }}
-              >
-                Hi,
-              </h1>
-              <h2
-                className="text-6xl mb-4 introduct font-bold"
-                style={{ fontFamily: "JetBrains Mono" }}
-              >
-                I'm John Davincent
-              </h2>
-              <h2
-                className="text-3xl mb-9 font-semibold ml-1"
-                style={{
-                  fontFamily: "var(--font-sans)",
-                  color: "var(--text-color)",
-                }}
-              >
-                Aspiring AI Software Developer
-              </h2>
-              <p
-                className="text-2xl/9 align-baseline ml-2"
-                style={{
-                  fontFamily: "var(--font-sans)",
-                  color: "var(--text-color)",
-                }}
-              >
-                I am a Binus University student majoring in Artificial
-                Intelligence (AI). I possess expertise in Python, a deep
-                understanding of various Python libraries, and fundamentals of
-                machine learning. I have developed several projects, including
-                AI for stock prediction and chatbots. My vision is to leverage
-                AI to transform human life and solve future challenges.
-              </p>
-              <h1
-                className="text-2xl align-baseline ml-2 mt-40"
-                style={{
-                  fontFamily: "var(--font-sans)",
-                  color: "var(--text-color)",
-                }}
-              >
-                Connected with me :
-              </h1>
-            </div>
-            <div className="flex space-x4 ml-12 mt-30">
-              <a
-                href="https://www.linkedin.com/in/johndavincent/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-5 text-gray-400 hover:text-blue-600"
-              >
-                <FaLinkedin size={40} />
-              </a>
+        <section
+          id="home"
+          className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16"
+        >
+          {/* Bagian teks */}
+          <div className="flex-1 max-w-2xl text-center md:text-left">
+            <h1
+              className="text-3xl mb-3"
+              style={{ fontFamily: "var(--font-sans)", color: "white" }}
+            >
+              Hi,
+            </h1>
 
-              <a
-                href="https://www.instagram.com/davincent_goh/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-5 text-gray-400 hover:text-pink-500"
+            <h2
+              className="text-6xl mb-4 font-bold introduct"
+              style={{ fontFamily: "JetBrains Mono" }}
+            >
+              I'm John Davincent
+            </h2>
+
+            <h2
+              className="text-3xl mb-9 font-semibold"
+              style={{
+                fontFamily: "var(--font-sans)",
+                color: "var(--text-color)",
+              }}
+            >
+              Aspiring AI Software Developer
+            </h2>
+
+            <p
+              className="text-2xl/9 align-baseline ml-2"
+              style={{
+                fontFamily: "var(--font-sans)",
+                color: "var(--text-color)",
+              }}
+            >
+              I am a Binus University student majoring in Artificial Intelligence (AI).
+              I possess expertise in Python, a deep understanding of various Python
+              libraries, and fundamentals of machine learning. I have developed several
+              projects, including AI for stock prediction and chatbots. My vision is to
+              leverage AI to transform human life and solve future challenges.
+            </p>
+
+            {/* Socials */}
+            <div className="mt-10">
+              <h1
+                className="text-2xl mb-4"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  color: "var(--text-color)",
+                }}
               >
-                <FaInstagram size={40} />
-              </a>
-              <a
-                href="https://wa.me/6281276296731"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-500"
-              >
-                <FaWhatsapp size={40} />
-              </a>
+                Connect with me:
+              </h1>
+
+              <div className="flex justify-center md:justify-start space-x-6">
+                <a
+                  href="https://www.linkedin.com/in/johndavincent/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-600"
+                >
+                  <FaLinkedin size={40} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/davincent_goh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-pink-500"
+                >
+                  <FaInstagram size={40} />
+                </a>
+
+                <a
+                  href="https://wa.me/6281276296731"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-green-500"
+                >
+                  <FaWhatsapp size={40} />
+                </a>
+              </div>
             </div>
           </div>
+
+          {/* Bagian foto */}
           <div className="flex flex-col max-w h-200 mt-35 ml-20">
             <div className="w-120 h-120 rounded-full bg-white flex justify-center items-center shadow-lg ml-10">
-              <div className="rounded-full overflow-hidden">
+              <div className="rounded-full overflow-hidden ">
                 <img
-                  className="w-full h-full object-cover"
-                  src={portojohn} alt = "John Davincent"
-                ></img>
+                  className="object-cover w-full h-full"
+                  src={portojohn}
+                  alt="John Davincent"
+                />
               </div>
             </div>
 
-            <div>
-              <h1
-                className="underline italic text-xl align-baseline mt-25"
-                style={{
-                  fontFamily: "var(--font-sans)",
-                  color: "var(--text-color)",
-                }}
-              >
-                "AI is the future. Those who fail to understand it will be left
-                behind"
-              </h1>
-            </div>
+            <h1
+              className="underline italic text-lg md:text-xl text-center mt-6"
+              style={{
+                fontFamily: "var(--font-sans)",
+                color: "var(--text-color)",
+              }}
+            >
+              "AI is the future. Those who fail to understand it will be left behind."
+            </h1>
           </div>
         </section>
+
+        <div className= "flex col ">
+          <h1 
+            className="text-6xl mb-4 introduct font-bold"
+            style={{ fontFamily: "JetBrains Mono" }}> 
+              Skills </h1>
+            <div className = "max-w-4xl mx-auto bg-[#111] border border-[#2afc98]/40 rounded-2xl shadow-[0_0_20px_rgba(42,252,152,0.1)] p-8 flex flex-col md:flex-row justify-between gap-8 transition-all duration-300 hover:shadow-[0_0_25px_rgba(42,252,152,0.2)]">
+                <div className = "flex-1">
+                  <h2 
+                  className = "text-2xl"
+                  style={{
+                  fontFamily: "JetBrains Mono" ,
+                  color: "var(--text-color)",
+                }}>Hard Skills</h2>
+                  <ul 
+                  className = "text-xl " 
+                  style={{
+                  fontFamily: "var(--font-sans)",
+                  color: "var(--text-color)",
+                }}>
+                    <li>Python</li>
+                    <li>Tensorflow & Keras</li>
+                    <li>Machine Learninig</li>
+                    <li>React</li>
+                    <li>HTML, CSS</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>SQL and MySQL</li>
+                    <li>Excel and Words</li>
+                    <li>github and git</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
 
         <div className="flex items-center flex-col justify-center mt-40 w-full">
           <div className="flex-wrap items-center 200h mb-10">
