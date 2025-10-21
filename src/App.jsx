@@ -3,11 +3,11 @@ import Portocard from "./components/card";
 import Navbar from "./components/Navbar";
 import karyawarna from "./assets/picture/karyawarna.png";
 import pintarsaham from "./assets/picture/pintarsaham.png";
-import portojohn from "./assets/picture/portoJohn-removebg-preview.png"
-import diamondcut from "./assets/picture/diamondcut.png"
+import portojohn from "./assets/picture/portoJohn-removebg-preview.png";
+import diamondcut from "./assets/picture/diamondcut.png";
 import hbit from "./assets/picture/hbit.png";
 import rm from "./assets/picture/rm.png";
-import aisaham from "./assets/picture/aiSaham.png"
+import aisaham from "./assets/picture/aiSaham.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -59,7 +59,7 @@ function App() {
     },
     {
       image: aisaham,
-      types: ["Streamlit","AI model : LSTM"],
+      types: ["Streamlit", "AI model : LSTM"],
       title: "AI prediksi Saham",
       title_picture: "logo",
       description: `AI yang mampu memprediksi harga saham dalam jangka waktu yang ditentukan dan juga dapat memberikan rekomendasi beli atau jual dengan disclamer yang ketat`,
@@ -109,11 +109,12 @@ function App() {
                 color: "var(--text-color)",
               }}
             >
-              I am a Binus University student majoring in Artificial Intelligence (AI).
-              I possess expertise in Python, a deep understanding of various Python
-              libraries, and fundamentals of machine learning. I have developed several
-              projects, including AI for stock prediction and chatbots. My vision is to
-              leverage AI to transform human life and solve future challenges.
+              I am a Binus University student majoring in Artificial
+              Intelligence (AI). I possess expertise in Python, a deep
+              understanding of various Python libraries, and fundamentals of
+              machine learning. I have developed several projects, including AI
+              for stock prediction and chatbots. My vision is to leverage AI to
+              transform human life and solve future challenges.
             </p>
 
             {/* Socials */}
@@ -172,51 +173,83 @@ function App() {
             </div>
 
             <h1
-              className="underline italic text-lg md:text-xl text-center mt-6"
+              className="underline italic text-lg md:text-xl text-center mt-12"
               style={{
                 fontFamily: "var(--font-sans)",
                 color: "var(--text-color)",
               }}
             >
-              "AI is the future. Those who fail to understand it will be left behind."
+              "AI is the future. Those who fail to understand it will be left
+              behind."
             </h1>
           </div>
         </section>
 
-        <div className= "flex col ">
-          <h1 
+        <div className="flex flex-col items-center justify-center">
+          <h1
             className="text-6xl mb-4 introduct font-bold"
-            style={{ fontFamily: "JetBrains Mono" }}> 
-              Skills </h1>
-            <div className = "max-w-4xl mx-auto bg-[#111] border border-[#2afc98]/40 rounded-2xl shadow-[0_0_20px_rgba(42,252,152,0.1)] p-8 flex flex-col md:flex-row justify-between gap-8 transition-all duration-300 hover:shadow-[0_0_25px_rgba(42,252,152,0.2)]">
-                <div className = "flex-1">
-                  <h2 
-                  className = "text-2xl"
-                  style={{
-                  fontFamily: "JetBrains Mono" ,
+            style={{ fontFamily: "JetBrains Mono" }}
+          >
+            Skills{" "}
+          </h1>
+          <div className="max-w-4xl mx-auto bg-[#111] border border-[#2afc98]/40 rounded-2xl shadow-[0_0_20px_rgba(42,252,152,0.1)] p-8 flex flex-col md:flex-row justify-between gap-8 transition-all duration-300 hover:shadow-[0_0_25px_rgba(42,252,152,0.2)]">
+            <div className="flex-1 ml-10 mr-20">
+              <h2
+                className="text-3xl font-bold mb-4"
+                style={{
+                  fontFamily: "JetBrains Mono",
                   color: "var(--text-color)",
-                }}>Hard Skills</h2>
-                  <ul 
-                  className = "text-xl " 
-                  style={{
+                }}
+              >
+                Hard Skills
+              </h2>
+              <ul
+                className="text-xl list-disc"
+                style={{
                   fontFamily: "var(--font-sans)",
                   color: "var(--text-color)",
-                }}>
-                    <li>Python</li>
-                    <li>Tensorflow & Keras</li>
-                    <li>Machine Learninig</li>
-                    <li>React</li>
-                    <li>HTML, CSS</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>SQL and MySQL</li>
-                    <li>Excel and Words</li>
-                    <li>github and git</li>
-                  </ul>
-                </div>
+                }}
+              >
+                <li className="mb-4">Python</li>
+                <li className="mb-4">Tensorflow & Keras</li>
+                <li className="mb-4">AI and Machine Learninig</li>
+                <li className="mb-4">React</li>
+                <li className="mb-4">HTML, CSS</li>
+                <li className="mb-4">Java</li>
+                <li className="mb-4">C and C++</li>
+                <li className="mb-4">Excel and Words</li>
+                <li className="mb-4">Figma and Canva</li>
+                <li className="mb-4">SQL and MySQL</li>
+                <li className="mb-4">Accounting</li>
+                <li className="mb-4">Github and git</li>
+              </ul>
             </div>
+            <div className="flex-1 mr-10">
+              <h2
+                className="text-3xl font-bold mb-4"
+                style={{
+                  fontFamily: "JetBrains Mono",
+                  color: "var(--text-color)",
+                }}
+              >
+                Soft Skills
+              </h2>
+              <ul
+                className="text-xl list-disc"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  color: "var(--text-color)",
+                }}
+              >
+                <li className="mb-4">Public Speaking</li>
+                <li className="mb-4">Leadership</li>
+                <li className="mb-4">Teamwork and Collaboration</li>
+                <li className="mb-4">Problem solving</li>
+                <li className="mb-4">Critical Thinking</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
 
         <div className="flex items-center flex-col justify-center mt-40 w-full">
           <div className="flex-wrap items-center 200h mb-10">
