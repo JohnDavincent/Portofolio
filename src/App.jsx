@@ -14,6 +14,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ExperienceCarousel from "./components/experience";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   const projectCard = [
@@ -25,6 +26,7 @@ function App() {
       description: `PintarSaham merupakan aplikasi web yang bertujuan untuk membantu orang mengerti tentang saham
                     Pada web ini ada beberapa fitur unggulan, yaitu : course tentang dasar saham, Chart saham, forum diskusi, fitur prediksi harga saham dengan AI serta game simulasi`,
       link: "https://incredible-beijinho-043b7d.netlify.app/",
+      link_git: "https://github.com/JohnDavincent/pintar_saham_project",
     },
     {
       image: karyawarna,
@@ -56,6 +58,7 @@ function App() {
       title: "DiamondCut Motor",
       title_picture: "logo",
       description: `DiamondCut motor adalah website yang bertujuan untuk menjual supercar dan sebagai showroom dari berbagai merek supercar`,
+      link_git: "https://github.com/JohnDavincent/DiamondCut_motor_project",
     },
     {
       image: aisaham,
@@ -74,26 +77,27 @@ function App() {
         <Navbar />
         <section
           id="home"
-          className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16"
+          className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between gap-16 px-16 md:px-32 lg:px-110
+"
         >
           {/* Bagian teks */}
-          <div className="flex-1 max-w-2xl text-center md:text-left">
+          <div className="flex-1 max-w-4xl text-center md:text-left">
             <h1
-              className="text-3xl mb-3"
+              className="text-3xl mb-3 font-bold"
               style={{ fontFamily: "var(--font-sans)", color: "white" }}
             >
               Hi,
             </h1>
 
             <h2
-              className="text-6xl mb-4 font-bold introduct"
+              className="text-7xl mb-4 font-bold introduct"
               style={{ fontFamily: "JetBrains Mono" }}
             >
               I'm John Davincent
             </h2>
 
             <h2
-              className="text-3xl mb-9 font-semibold"
+              className="text-5xl mb-9 font-semibold"
               style={{
                 fontFamily: "var(--font-sans)",
                 color: "var(--text-color)",
@@ -103,7 +107,7 @@ function App() {
             </h2>
 
             <p
-              className="text-2xl/9 align-baseline ml-2"
+              className="text-2xl/9 align-baseline ml-2 pt-6"
               style={{
                 fontFamily: "var(--font-sans)",
                 color: "var(--text-color)",
@@ -118,15 +122,15 @@ function App() {
             </p>
 
             {/* Socials */}
-            <div className="mt-10">
+            <div className="mt-25">
               <h1
-                className="text-2xl mb-4"
+                className="text-3xl mb-4 mt-10 font-semibold"
                 style={{
                   fontFamily: "var(--font-sans)",
                   color: "var(--text-color)",
                 }}
               >
-                Connect with me:
+                Connect with me :
               </h1>
 
               <div className="flex justify-center md:justify-start space-x-6">
@@ -136,7 +140,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-600"
                 >
-                  <FaLinkedin size={40} />
+                  <FaLinkedin size={60} />
                 </a>
 
                 <a
@@ -145,7 +149,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-pink-500"
                 >
-                  <FaInstagram size={40} />
+                  <FaInstagram size={60} />
                 </a>
 
                 <a
@@ -154,7 +158,16 @@ function App() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-green-500"
                 >
-                  <FaWhatsapp size={40} />
+                  <FaWhatsapp size={60} />
+                </a>
+
+                <a
+                  href="https://github.com/JohnDavincent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-purple-500"
+                >
+                  <FaGithub size={60} />
                 </a>
               </div>
             </div>
@@ -162,7 +175,7 @@ function App() {
 
           {/* Bagian foto */}
           <div className="flex flex-col max-w h-200 mt-35 ml-20">
-            <div className="w-120 h-120 rounded-full bg-white flex justify-center items-center shadow-lg ml-10">
+            <div className="w-120 h-120 rounded-full bg-white flex justify-center items-center shadow-lg ml-35">
               <div className="rounded-full overflow-hidden ">
                 <img
                   className="object-cover w-full h-full"
@@ -173,7 +186,7 @@ function App() {
             </div>
 
             <h1
-              className="underline italic text-lg md:text-xl text-center mt-12"
+              className="underline italic text-lg md:text-2xl text-center mt-22"
               style={{
                 fontFamily: "var(--font-sans)",
                 color: "var(--text-color)",
@@ -185,7 +198,7 @@ function App() {
           </div>
         </section>
 
-        <div className="flex flex-col items-center justify-center">
+        <div id="skills" className="flex flex-col items-center justify-center">
           <h1
             className="text-6xl mb-4 introduct font-bold"
             style={{ fontFamily: "JetBrains Mono" }}
@@ -251,8 +264,11 @@ function App() {
           </div>
         </div>
 
-        <div className="flex items-center flex-col justify-center mt-40 w-full">
-          <div className="flex-wrap items-center 200h mb-10">
+        <div
+          id="projects"
+          className="flex items-center flex-col justify-center mt-80 w-full"
+        >
+          <div className="flex-wrap items-center 200h mb-10 mt-40">
             <h1
               className="text-6xl mb-4 introduct font-bold"
               style={{ fontFamily: "JetBrains Mono" }}
@@ -271,11 +287,12 @@ function App() {
                 types={p.types}
                 description={p.description}
                 link={p.link}
+                link_git={p.link_git}
               />
             ))}
           </div>
         </div>
-        <div className="min-h-screen text-white">
+        <div id="experience" className="min-h-screen text-white">
           <ExperienceCarousel />
         </div>
       </div>

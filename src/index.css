@@ -14,7 +14,7 @@
   .nav-font {
     font-family: "JetBrains Mono", monospace;
     color: lightslategray;
-    @apply text-xl
+    @apply text-xl;
   }
   .introduct {
     color: #00c896;
@@ -23,11 +23,10 @@
   .name {
     color: #00c853;
   }
-  
+
   .card-background {
-    background-color:#E0E0E0;
+    background-color: #e0e0e0;
   }
-  
 }
 
 @theme {
@@ -37,4 +36,8 @@
   --font-sans: "Mona Sans", sans-serif;
   --font-modern-negra: "Modern Negra", sans-serif;
   --font-serif: "DM Serif Text", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

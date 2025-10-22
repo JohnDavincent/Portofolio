@@ -8,16 +8,24 @@ const Navbar = () => {
         <a href="#home" className="nav-font hover:text-stroke-white">
           Home
         </a>
-        <a href="#about" className="nav-font hover:text-stroke-white">
-          About
+        <a href="#skills" className="nav-font hover:text-stroke-white">
+          skills
         </a>
         <a href="#projects" className=" nav-font hover:text-stroke-white">
           Projects
         </a>
+        <a href="#experience" className=" nav-font hover:text-stroke-white">
+          Experience
+        </a>
         <a href="#contact" className="nav-font hover:text-stroke-white">
           Contact
         </a>
-        <a href = "/files/John Davincent CV.pdf" download className = " text-xl px-4 py-2 bg-blue-500 text-white rounded-lg" style = {{fontFamily : "JetBrains Mono"}}> 
+        <a
+          href="/files/John Davincent CV.pdf"
+          download
+          className=" text-xl px-4 py-2 bg-blue-500 text-white rounded-lg"
+          style={{ fontFamily: "JetBrains Mono" }}
+        >
           Download CV
         </a>
       </div>
