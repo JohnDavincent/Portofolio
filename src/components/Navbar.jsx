@@ -21,7 +21,7 @@ const Navbar = () => {
           Contact
         </a>
         <a
-          href="/files/John Davincent CV.pdf"
+          href="/files/John Davincent CV (4).pdf"
           download
           className=" text-xl px-4 py-2 bg-blue-500 text-white rounded-lg"
           style={{ fontFamily: "JetBrains Mono" }}
